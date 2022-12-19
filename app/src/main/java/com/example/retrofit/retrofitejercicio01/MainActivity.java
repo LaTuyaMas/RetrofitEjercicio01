@@ -27,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
 
-    private Response response;
     private List<User> usersList;
     private ResponseAdapter adapter;
     private RecyclerView.LayoutManager lm;
@@ -40,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         usersList = new ArrayList<>();
-        response = new Response();
         adapter = new ResponseAdapter(usersList, R.layout.user_view_holder, this);
         lm = new LinearLayoutManager(this);
 
